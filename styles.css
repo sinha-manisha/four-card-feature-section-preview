@@ -1,0 +1,138 @@
+:root{
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 15px;
+  font-weight: 200;
+  font-family: "Poppins";
+  background-color: var(--Very-Light-Gray);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.top-container{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-1 h1{
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+.heading-2 h1{
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--Grayish-Blue);
+  opacity: 0.5;
+  margin-top: 1rem;
+  font-size: 13px;
+  font-weight: 400;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+}
+.card-heading{
+  color: var(--Very-Dark-Blue);
+  font-weight: 400;
+  padding: 1.5rem;
+}
+.card-description{
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+  padding: .5rem 1rem 1rem 1.5rem;
+}
+.card-style{
+  background-color: white;
+  border-top-style: solid;
+  border-radius: 5px;
+  box-shadow: 2px 4px hsl(229, 6%, 66%,.2);
+}
+.left-card{
+  width: 33%;
+  border-color: var(--Cyan);
+  margin-right: 10px;
+}
+.middle-card-container{
+  width: 33%;
+  height: auto;
+  margin-top: 1.5rem;
+  margin-right: 10px;
+}
+.top-card{
+  width: 100%;
+  border-color: var(--Red);
+  margin-bottom: 10px;
+}
+.bottom-card{
+  width: 100%;
+  border-color: var(--Orange);
+}
+.right-card{
+  width: 33%;
+  border-color: var(--Blue);
+}
+.card-icon{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 550px) {
+  h1{
+    font-size: 20px;
+  }
+  .top-container{
+    width: 100%;
+  }
+  .about{
+    width: 225px;
+  }
+  .container, .middle-card-container{
+    width: 100%;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-style{
+    width: 100%;
+  }
+  .top-card{
+    margin-bottom: 1.5rem;
+  }
+  .right-card{
+    margin-top: 1.5rem;
+  }
+}
